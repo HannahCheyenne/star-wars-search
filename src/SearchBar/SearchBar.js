@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SearchContext from '../SearchContext';
 import SearchSelector from '../SearchSelector/SearchSelector';
-// import config from '../config';
+import './SearchBar.css';
 
 export default class SearchBar extends Component {
     static contextType = SearchContext;

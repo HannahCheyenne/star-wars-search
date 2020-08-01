@@ -1,0 +1,15 @@
+select.searchBy {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 17px;
+    border-radius: 20px;
+    border: none;
+    padding: 4px 0 4px 8px;
+}
+
+
+@media all and (min-width: 1000px) {
+    select.searchBy {
+        font-size: 22px;
+        color: #CC5500;
+    }
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SearchContext from '../SearchContext'
+import './SearchSelector.css'
 
 export default class SearchSelector extends Component {
     static contextType = SearchContext;
