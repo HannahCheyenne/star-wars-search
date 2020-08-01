@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { format } from 'date-fns';
 import SearchContext from '../SearchContext';
 import './ResultsList.css';
 
@@ -64,7 +63,7 @@ export default class ResultsList extends Component {
                         <p className="result-name">{result.title}</p>
                         <p>Episode: {result.episode_id}</p>
                         <p>Director: {result.director}</p>
-                        <p>Release date: {format(new Date(result.release_date), 'MMMM do, yyy')}</p>
+                        <p>Release date: {result.release_date}</p>
                     </div>
                 ) 
             })
@@ -84,7 +83,7 @@ export default class ResultsList extends Component {
         return(
             <div className="results">
                 <div className="resultsList">
-                    {resultItems}
+                    {this.context.showResults ? (resultItems) : <></> }
                 </div> 
             </div>
         )
