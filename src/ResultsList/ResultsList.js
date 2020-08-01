@@ -28,7 +28,6 @@ export default class ResultsList extends Component {
                         <p>Manufacturer: {result.manufacturer}</p>
                         <p>Crew size: {result.crew} Passengers: {result.passengers}</p>
                         <p>Cargo Capacity: {result.cargo_capacity}kg</p>
-                        <p>Vehicle class: {result.vehicle_class}</p>
                     </div>
                 ) 
             })
